@@ -26,11 +26,6 @@
     </isotope>
   </div>
 
-  <div id="change">
-    <button @click="add">Add</button>
-    <button @click="replace">Replace</button>
-  </div>
-
   <div>
     <div v-if="selected" class="item">
       <input type="text" name="" v-model="selected.name">
