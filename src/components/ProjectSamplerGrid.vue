@@ -50,13 +50,13 @@ export default {
     return {
       items: [
         {
-          src: require('../assets/Parkour.jpg')
+          src: require('../assets/whiteboard/LinkCloseup.jpg')
         },
         {
-          src: require('../assets/Kaylee.jpg')
+          src: require('../assets/whiteboard/WonderWomanDetail.jpg')
         },
         {
-          src: require('../assets/Florence.jpg')
+          src: require('../assets/whiteboard/StarWarsAction.jpg')
         }
       ]
     }

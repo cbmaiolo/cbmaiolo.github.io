@@ -5,17 +5,17 @@
     <h4>Filter</h4>
 
     <div class="button-group">
-      <v-btn flat v-for="(val, key) in option.getFilterData" 
+      <v-btn flat v-for="(val, key) in option.getFilterData"
       v-bind:data="val"
-      v-bind:key="key" 
-      class="button" 
-      :class="[key===filterOption? 'is-checked' : '']" 
+      v-bind:key="key"
+      class="button"
+      :class="[key===filterOption? 'is-checked' : '']"
       @click="filter(key)">{{key}}
       </v-btn>
     </div>
 
-    <isotope ref="cpt" 
-      :list="list" 
+    <isotope ref="cpt"
+      :list="list"
       id="root_isotope"
       :options='option'
       @filter="filterOption=arguments[0]"
@@ -45,8 +45,6 @@
 <script>
 import isotope from 'vueisotope'
 
-var count = 0
-
 export default {
   components: {
     isotope
@@ -56,8 +54,8 @@ export default {
     return {
       list: [
         {
-          src: require('../assets/Parkour.jpg'),
-          medium: 'photography',
+          src: require('../assets/whiteboard/LinkCloseup.jpg'),
+          medium: 'whiteboard',
           id: 25
         },
         {
@@ -66,8 +64,8 @@ export default {
           id: 7
         },
         {
-          src: require('../assets/Parkour.jpg'),
-          medium: 'photography',
+          src: require('../assets/whiteboard/WonderWomanDetail.jpg'),
+          medium: 'whiteboard',
           id: 12
         },
         {
@@ -137,6 +135,9 @@ export default {
           },
           'ink': function (el) {
             return el.medium === 'ink'
+          },
+          'whiteboard': function (el) {
+            return el.medium === 'whiteboard'
           }
         },
         getSortData: {
@@ -148,15 +149,7 @@ export default {
   },
   methods: {
     filter: function (key) {
-      console.log('hi there boy')
       this.$refs.cpt.filter(key)
-    },
-    add: function () {
-      this.list.push({ src: require('../assets/Kaylee.jpg'), medium: 'Juan', id: count++ })
-    },
-    replace: function () {
-      this.list = [{ src: require('../assets/Florence.jpg'), medium: 'Edgard', id: count++ },
-      { src: require('../assets/Kaylee.jpg'), medium: 'James', id: count++ }]
     }
   },
   computed: {
@@ -198,7 +191,7 @@ export default {
   }
 }
 
-@media (min-width: 600px) { 
+@media (min-width: 600px) {
   .item {
     width: 250px;
   }
