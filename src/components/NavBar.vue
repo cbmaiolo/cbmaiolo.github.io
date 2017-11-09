@@ -1,8 +1,6 @@
 <template>
   <v-toolbar fixed>
-    <v-toolbar-items>
-      <v-btn flat :to="{path: '/'}">cbmai</v-btn>
-    </v-toolbar-items>
+    <v-btn flat class="maple" :to="{path: '/'}">cbmai</v-btn>
     <v-spacer></v-spacer>
     <v-toolbar-side-icon class="hidden-md-and-up"></v-toolbar-side-icon>
     <v-toolbar-items class="hidden-sm-and-down">
@@ -15,14 +13,14 @@
           </v-list>
       </v-menu>
       <v-menu open-on-hover bottom>
-        <v-btn flat slot="activator">Myself</v-btn>
+        <v-btn flat :to="{path: '/aboutme'}" slot="activator">Myself</v-btn>
           <v-list>
               <v-list-tile v-for="item in about" :key="item.title" @click="">
                 <v-list-tile-title>{{ item.title }}</v-list-tile-title>
               </v-list-tile>
           </v-list>
       </v-menu>
-      <v-btn flat :to="{path: '/gallery'}">Blog</v-btn>
+      <v-btn flat :to="{path: '/blog'}">Blog</v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>

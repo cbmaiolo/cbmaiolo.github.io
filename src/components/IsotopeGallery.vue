@@ -1,17 +1,25 @@
 <template>
   <div>
-  <div class="gallery">
+  <div class="mainContent">
 
     <h4>Filter</h4>
+
+    <!--- This is for a vuetify toggle button group but I don't like the group
+    <v-btn-toggle mandatory v-model="toggle_model">
+      <v-btn flat v-for="(val, key) in option.getFilterData"
+      v-bind:data="val"
+      v-bind:key="key"
+      @click="filter(key)">{{key}}
+      </v-btn>
+    </v-btn-toggle>-->
 
     <div class="button-group">
       <v-btn flat v-for="(val, key) in option.getFilterData"
       v-bind:data="val"
       v-bind:key="key"
-      class="button"
       :class="[key===filterOption? 'is-checked' : '']"
       @click="filter(key)">{{key}}
-      </v-btn>
+    </v-btn>
     </div>
 
     <isotope ref="cpt"
@@ -19,7 +27,7 @@
       id="root_isotope"
       :options='option'
       @filter="filterOption=arguments[0]"
-      layout="masonry">
+      v-images-loaded:on.progress="layout">
       <div class="box" v-for="element in list" @click="selected=element"  :key="element.id" >
         <img v-bind:src="element.src"/>
       </div>
@@ -39,10 +47,14 @@
 
 <script>
 import isotope from 'vueisotope'
+import imagesLoaded from 'vue-images-loaded'
 
 export default {
   components: {
     isotope
+  },
+  directives: {
+    imagesLoaded
   },
   name: 'IsotopeGallery',
   data () {
@@ -145,6 +157,9 @@ export default {
   methods: {
     filter: function (key) {
       this.$refs.cpt.filter(key)
+    },
+    layout () {
+      this.$refs.cpt.layout('masonry')
     }
   },
   computed: {
@@ -160,9 +175,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.gallery {
-  margin: 0 auto;
-}
 
 .box img {
    width: 100%;
@@ -175,6 +187,10 @@ export default {
   box-sizing: border-box;
   font-family: monospace;
   color: #333;
+}
+
+.is-checked {
+  background-color: #E0E0E0 !important;
 }
 
 @media (max-width: 599px) {
