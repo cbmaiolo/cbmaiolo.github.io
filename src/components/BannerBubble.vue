@@ -1,10 +1,12 @@
 <template>
+  <a href="https://www.linkedin.com/in/christine-maiolo-627a956b/" target="_blank">
   <v-avatar
   class="bubble"
   size="250px">
     <img src='../assets/ProfilePicSquare.jpg'
     alt="avatar">
   </v-avatar>
+</a>
 </template>
 
 <script>

@@ -2,9 +2,11 @@
   <div class="cd-container">
   <section id="cd-timeline">
 	<div class="cd-timeline-block">
-		<div class="cd-timeline-img">
-			<img src="../assets/TD_logo.jpg" alt="Picture">
-		</div> <!-- cd-timeline-img -->
+		<a class="cd-timeline-img"
+        href="https://twitter.com/tdlab?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+        target="_blank">
+			<img src="../assets/TD_logo.jpg" alt="TD logo">
+		</a> <!-- cd-timeline-img -->
 
 		<div class="cd-timeline-content">
 			<h4>Started working at TD Lab</h4>
@@ -58,7 +60,7 @@ participating in ideation sessions and designing user studies for new projects.<
 
   <div class="cd-timeline-block">
     <div class="cd-timeline-img">
-      <img src="../assets/Andriod_logo.jpg" alt="Picture">
+      <img src="../assets/Andriod_logo.jpg" alt="Android logo">
     </div> <!-- cd-timeline-img -->
 
     <div class="cd-timeline-content">
@@ -81,9 +83,11 @@ participating in ideation sessions and designing user studies for new projects.<
   </div>
 
   <div class="cd-timeline-block">
-    <div class="cd-timeline-img">
-      <img src="../assets/Medallia_logo.jpg" alt="Picture">
-    </div> <!-- cd-timeline-img -->
+    <a class="cd-timeline-img"
+    href="https://www.medallia.com/"
+    target="_blank">
+      <img src="../assets/Medallia_logo.jpg" alt="Medallia Logo">
+    </a> <!-- cd-timeline-img -->
 
     <div class="cd-timeline-content">
       <h4>Experienced Silicon Valley</h4>
@@ -104,9 +108,11 @@ components to gallery, and allowed for live coding.</li>
   </div>
 
   <div class="cd-timeline-block">
-    <div class="cd-timeline-img">
-      <img src="../assets/LAS_logo.jpg" alt="Picture">
-    </div> <!-- cd-timeline-img -->
+    <a class="cd-timeline-img"
+    href="https://www.las.ch/"
+    target="_blank">
+      <img src="../assets/LAS_logo.jpg" alt="Leysin American School logo">
+    </a> <!-- cd-timeline-img -->
 
     <div class="cd-timeline-content">
       <h4>Learned to Ski</h4>
@@ -126,10 +132,11 @@ components to gallery, and allowed for live coding.</li>
   </div>
 
   <div class="cd-timeline-block">
-    <div class="cd-timeline-img">
-      <img src="../assets/BB_logo.jpg" alt="Picture">
-    </div> <!-- cd-timeline-img -->
-
+    <a class="cd-timeline-img"
+    href="https://ca.blackberry.com/"
+    target="_blank">
+      <img src="../assets/BB_logo.jpg" alt="BlackBerry logo">
+    </a> <!-- cd-timeline-img -->
     <div class="cd-timeline-content">
       <h4>Became an Ambassador</h4>
       <p>Represented BlackBerry to my peers as an official Campus Ambassador.</p>
@@ -147,9 +154,11 @@ applicants and made high quality referrals</li>
   </div>
 
   <div class="cd-timeline-block">
-    <div class="cd-timeline-img">
-      <img src="../assets/BB_logo.jpg" alt="Picture">
-    </div> <!-- cd-timeline-img -->
+    <a class="cd-timeline-img"
+    href="https://ca.blackberry.com/"
+    target="_blank">
+      <img src="../assets/BB_logo.jpg" alt="BlackBerry logo">
+    </a> <!-- cd-timeline-img -->
 
     <div class="cd-timeline-content">
       <h4>Fell in love with BlackBerry</h4>
@@ -167,9 +176,11 @@ applicants and made high quality referrals</li>
   </div>
 
   <div class="cd-timeline-block">
-    <div class="cd-timeline-img">
-      <img src="../assets/Kaleidescape_logo.jpg" alt="Picture">
-    </div> <!-- cd-timeline-img -->
+    <a class="cd-timeline-img"
+    href="https://www.kaleidescape.com/"
+    target="_blank">
+      <img src="../assets/Kaleidescape_logo.jpg" alt="Kaleidescape Inc. logo">
+    </a> <!-- cd-timeline-img -->
 
     <div class="cd-timeline-content">
       <h4>Got my Start</h4>
