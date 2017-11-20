@@ -4,7 +4,12 @@ import Vue from 'vue'
 import Vuetify from 'vuetify'
 import App from './App'
 import router from './router'
+import 'vue-awesome/icons'
+import Icon from 'vue-awesome/components/Icon'
+
 import('../node_modules/vuetify/dist/vuetify.min.css')
+
+Vue.component('icon', Icon)
 
 Vue.use(Vuetify)
 
