@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import IsotopeGallery from '@/components/IsotopeGallery'
+// import HelloWorld from '@/components/HelloWorld'
+// import IsotopeGallery from '@/components/IsotopeGallery'
 import Resume from '@/components/Resume'
-import ProjectSamplerGrid from '@/components/ProjectSamplerGrid'
+// import ProjectSamplerGrid from '@/components/ProjectSamplerGrid'
 
 Vue.use(Router)
 
@@ -12,8 +12,8 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: ProjectSamplerGrid
-    },
+      component: Resume
+    } /*,
     {
       path: '/gallery',
       name: 'Gallery',
@@ -28,6 +28,6 @@ export default new Router({
       path: '/blog',
       name: 'Sampler',
       component: HelloWorld
-    }
+    } */
   ]
 })

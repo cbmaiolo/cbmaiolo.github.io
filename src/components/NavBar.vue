@@ -1,8 +1,8 @@
 <template>
   <v-toolbar fixed>
-    <v-btn flat class="maple" :to="{path: '/'}">cbmai</v-btn>
+    <v-btn flat :to="{path: '/'}">cbmai</v-btn>
     <v-spacer></v-spacer>
-    <v-toolbar-side-icon class="hidden-md-and-up"></v-toolbar-side-icon>
+    <!---<v-toolbar-side-icon class="hidden-md-and-up"></v-toolbar-side-icon>
     <v-toolbar-items class="hidden-sm-and-down">
       <v-menu open-on-hover>
         <v-btn flat :to="{path: '/gallery'}" slot="activator">Portfolio</v-btn>
@@ -22,6 +22,7 @@
       </v-menu>
       <v-btn flat :to="{path: '/blog'}">Blog</v-btn>
     </v-toolbar-items>
+  -->
   </v-toolbar>
 </template>
 
