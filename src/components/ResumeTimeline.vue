@@ -66,10 +66,10 @@ participating in ideation sessions and designing user studies for new projects.<
     <div class="cd-timeline-content">
       <h4>Built What Should We?</h4>
       <p>What Should We? is an an Android app created by myself and 3 other classmates. It was a term long project created for CS 446: Software Design and Architecture.</p>
-      <p>The app seeks to solve the problem of group indecision. It allowed people to create polls to anoymously add and vote for movies, restuarants and more. Connected to imdb and Google Places, What Should We? empowered friends to make informed decisions without the arguing or embarrasment of putting forth a suggestion. </p>
+      <p>The app seeks to solve the problem of group indecision. It allowed people to create polls to anonymously add and vote for movies, restaurants and more. Connected to imdb and Google Places, What Should We? empowered friends to make informed decisions without the arguing or embarrassment of putting forth a suggestion. </p>
       <p>My contributions include:</p>
       <ul>
-        <li>Auto complete suggestions for movies and restuarant using OMDB and Google Places</li>
+        <li>Auto complete suggestions for movies and restaurant using OMDB and Google Places</li>
         <li>Linking poll options to IMDB and Google Places ids so that users could see more information on their choices</li>
         <li>Design of the UI and visual assets</li>
         <li>Poll history page</li>
@@ -91,7 +91,7 @@ participating in ideation sessions and designing user studies for new projects.<
 
     <div class="cd-timeline-content">
       <h4>Experienced Silicon Valley</h4>
-      <p>Medallia gathers real time customer experience statistics and surveys and presents customized reports to company employees. Medallias service are used in hospitality, retail, financial services, high-tech, and business-to-business companies internationally.</p>
+      <p>Medallia gathers real time customer experience statistics and surveys and presents customized reports to company employees. Medallia's services are used in hospitality, retail, financial services, high-tech, and business-to-business companies internationally.</p>
       <p> During my co-op I researched and implemented UI framework gallery built with AngularJS.</p>
       <ul>
         <li>Gallery dynamically rendered interactive component demos in consistent format,
